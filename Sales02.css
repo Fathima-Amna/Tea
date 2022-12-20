@@ -1,0 +1,37 @@
+.logo1{
+    width: 100%;
+    height: auto;
+}
+.cont{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.sub-heading{
+    font-size: xx-large;
+    position: absolute;
+    bottom: 8px;
+    left:16px;
+    color: white;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.item-1{
+    display: inline-block;
+    vertical-align: top;
+}
+.item-1 p,h4{
+    padding-left: 20px;
+}
+.product-container:hover img{
+    transform: scale(1.075);
+}

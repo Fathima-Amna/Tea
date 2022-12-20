@@ -1,0 +1,502 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: rgb(17,17,17);
+    box-sizing: border-box;
+    font-size: large;
+    
+}
+h1,h2{
+    margin:0.5em 0;
+}
+h2{
+    text-decoration-line: underline;
+}
+.font{
+    color: #99aa83;
+}
+.font a{
+    color: #99aa83;
+}
+.navi{
+    display: flex;
+    align-items: center;
+    padding: 0.5px;
+    background-color: #98bf64;
+}
+
+main{
+    padding:1em;
+    margin:0;
+}
+header, footer{
+    padding: 1em;
+    background: #98bf64;
+}
+footer ul{
+    background-color: #98bf64;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+footer li{
+    background-color: #98bf64;
+    padding: none;
+}
+footer p{
+    background-color: #98bf64;
+}
+footer a{
+    background-color: #98bf64;
+    text-decoration: none;
+    color:rgb(17,17,17);
+    line-height: 40px;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.mainNav{
+    flex: 1;
+    text-align: right;
+    font-size: larger;
+    background-color: #98bf64;
+}
+
+.mainNav ul{
+    list-style-type: none;
+    display: inline-block;
+    background-color: #98bf64;
+    
+}
+.mainNav li{
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #98bf64;
+}
+.mainNav a{
+    text-decoration: none;
+    color: rgb(17,17,17);
+}
+
+.dropbtn, li a{
+    display:inline-block;
+    text-align: right;
+    text-decoration: none;
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown .dropbtn{
+    border: none;
+    outline: none;
+    background-color:inherit;
+    font-family: inherit;
+    margin:0;
+}
+.content{
+    display: none;
+    position: absolute;
+    background-color: #98bf64;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.content a{
+    color: rgb(17,17,17);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.content a:hover{
+    background-color: #abb79b;
+} 
+.dropdown:hover .content{
+    display: block;
+}
+p{
+    color: rgb(17,17,17);
+}
+.Navtext{
+    padding:calc(100%-1rem);
+    position: absolute;
+}
+#mainImg{
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin:0 auto;
+}
+img{
+    width:450px;
+    height:300px;
+}
+iframe{
+    padding-left: 50px;
+}
+#padding{
+    padding-left: 100px;
+}
+#sltb{
+    width: auto;
+    height: auto;
+}
+.buy{
+    width:450px;
+    height: auto;
+    background-color: #abb79b;
+}
+table,th,td{
+    border: 1px black solid;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+#types td, #types th{
+    padding: 8px;
+}
+#types tr:nth-child(odd){
+    background-color: #abb79b;
+}
+#types th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+#footer{
+    background-color: #98bf64;
+}
+.logo{
+    background-color: #98bf64;
+}
+.logo img{
+    width: 145px;
+    height: 80px;
+    background-color: #98bf64;
+}
+.container{
+    margin: auto;
+}
+.column{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.button{
+    flex-basis:20%;
+    min-width: 400px;
+    margin-bottom: 50px;
+}
+button{
+    width: 30%;
+    height: 30%;
+    border-radius: 4px;
+    padding: 20px 20px;    
+}
+.product-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item-1{
+    flex-basis:30%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.item-1 p,h4{
+    padding-left: 20px;
+}
+.item-1 img{
+    width: 100%;
+}
+.product-container h2{
+    text-decoration: none;
+}
+/*Sem2 Purchase and Donate Page*/
+.payment{
+text-decoration: none;
+text-transform: uppercase;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-flow: column;
+padding-bottom: 60px;
+}
+.payment form{
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    padding: 20px;
+    width: 700px;
+}
+.payment form .inputBox{
+    margin-top: 20px;
+}
+/*FORM VALIDATION*/
+.payment form .inputBox.success input{
+    border-color: #09c372;
+}
+.payment form .inputBox.error input{
+    border-color: #ff3860;
+}
+.inputBox .error{
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+.payment form .inputBox span{
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+.payment form .inputBox input,
+.payment form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: #444;
+}
+.payment form .flexbox{
+    display: flex;
+    gap: 15px;
+}
+.payment form .flexbox .inputBox{
+    flex: 1 1 150px;
+}
+.payment form .submit-btn{
+    width: 100%;
+    background: #042F10;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+    border-radius: 10px;
+    break-before: 5px;
+}
+.payment form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+.popup{
+    width:400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin:30px 0 10px;
+    text-decoration: none;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+/*Sem2 Booking Page*/
+.book{
+    width:100%;
+    height: auto;
+    background-color: #abb79b;
+}
+.booking-form{
+    text-decoration: none;
+    text-transform: uppercase;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+.booking-form form{
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    padding: 20px;
+    width: 80%;
+}
+.booking-form .input{
+    margin-top: 20px;
+}
+.booking-form .input span{
+    display: block;
+    color: #999;
+    padding-bottom: 5px;
+}
+.booking-form .input input,
+.booking-form .input select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: #444;
+}
+.booking-form .submit-btn{
+    width: 100%;
+    background: #042F10;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+    border-radius: 10px;
+    break-before: 5px;
+}
+.booking-form .submit-btn:hover{
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+.wrapper {
+    height: 80px;
+    min-width: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.wrapper h4{
+    color: #444;
+    text-transform: uppercase;
+}
+.wrapper span{
+    width: 100%;
+    text-align: center;
+    font-size: 55px;
+    color: #444;
+    font-weight: 600;
+    cursor: pointer;
+}
+.wrapper span #LA-num{
+    font-size: 50px;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+.wrapper span #LC-num{
+    font-size: 50px;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+.wrapper span #FA-num{
+    font-size: 50px;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+.wrapper span #FC-num{
+    font-size: 50px;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+.wrapper span #I-num{
+    font-size: 50px;
+    border-right: 2px solid rgba(0,0,0,0.2);
+    border-left: 2px solid rgba(0,0,0,0.2);
+    pointer-events: none;
+}
+.input span{
+    width: 100%;
+
+    color: #444;
+    font-weight: 600;
+    cursor: pointer;
+}
+/*FORM VALIDATION*/
+.booking-form .input.success input{
+    border-color: #09c372;
+}
+.booking-form .input.error input{
+    border-color: #ff3860;
+}
+.input .error{
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+@media only screen and (min-device-width:350px) and (max-device-width:800px){
+.mainNav{
+    flex-basis: 100%;
+    text-align: justify;
+}
+.column{
+    flex-basis: 50%;
+}
+
+img{
+    width:100%;
+}
+.buy{
+    width:100%;
+}
+iframe{
+    width: 100%;
+    padding-left: 0;
+}
+#padding{
+    padding-left: 0;
+}
+.button{
+    padding-left: 50px;
+}
+.button button{
+    width:90%;
+    padding: 20px 20px;
+}
+.column{
+    align-items: center;
+}
+}
+
+
+
+
+
+
+
+
+
+

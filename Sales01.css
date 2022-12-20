@@ -1,0 +1,41 @@
+.logo1{
+    width: 100%;
+    height: auto;
+}
+.cont{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.sub-heading{
+    font-size: xx-large;
+    position: absolute;
+    bottom: 8px;
+    left:16px;
+    color: white;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.item-1{
+    flex-basis:30%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.item-1 img{
+    width: 100%;
+}
+
+.product-container:hover img{
+    transform: scale(1.075);
+}

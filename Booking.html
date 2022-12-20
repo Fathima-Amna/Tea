@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+        <meta name="description" content="This is about booking tickets to the Ceylon tea museum">
+        <title>Booking</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles.css">
+     </head>
+     <body>
+      <div class="container">
+         <header>
+         <div class="navi">
+             <div class="logo">
+                 <img src="Images/Main logo.webp">
+             </div>
+             <nav class="mainNav">
+                 <ul>
+                     <li><h3>Ticket Booking</h3></li>
+                 </ul>
+             </nav>
+         </div>
+         </header>
+         <div class="booking-form">
+         <form action="\" id="form">
+         <div class="input">
+            <span>Date</span>
+            <input type="date" class="select">
+         </div>
+         <div class="input">
+            <span>Full Name</span>
+            <input type="text" class="select" id="fname">
+            <div id="error"></div>
+         </div>
+         <div class="input">
+            <span>Mobile Number</span>
+            <input type="text" class="select" id="mobilenumber">
+            <div id="error"></div>
+         </div>
+         <div class="input">
+            <span>Email Address</span>
+            <input type="email" class="select" id="email">
+            <div id="error"></div>
+         </div>
+         <div class="input">
+            <span>Confirm email address</span>
+            <input type="text" class="select" id="chkemail">
+            <div id="error"></div>
+         </div>
+         <div class="input">
+            <span>Gender</span>
+            <select name="" id="" class="gender">
+               <option value="M">Male</option>
+               <option value="F">Female</option>
+            </select>
+         </div>
+         <div class="input">
+            <span>Duration</span>
+            <select name="" id="time" class="duration">
+               <option value="3" id="hours">3hrs</option>
+               <option value="12">Half day</option>
+               <option value="24">Full day</option>
+            </select>
+         </div>
+         <br>
+         <div class="wrapper">
+            <h4>LOCAL ADULT</h4>
+            <span id="LA-minus">-</span>
+            <span id="LA-num">00</span>
+            <span id="LA-plus">+</span>
+         </div>
+         <div class="wrapper">
+            <h4>LOCAL CHILD</h4>
+            <span id="LC-minus">-</span>
+            <span id="LC-num">00</span>
+            <span id="LC-plus">+</span>
+         </div>
+         <div class="wrapper">
+            <h4>FOREIGN ADULT</h4>
+            <span id="FA-minus">-</span>
+            <span id="FA-num">00</span>
+            <span id="FA-plus">+</span>
+         </div>
+         <div class="wrapper">
+            <h4>FOREIGN CHILD</h4>
+            <span id="FC-minus">-</span>
+            <span id="FC-num">00</span>
+            <span id="FC-plus">+</span>
+         </div>
+         <div class="wrapper">
+            <h4>INFANT</h4>
+            <span id="I-minus">-</span>
+            <span id="I-num">00</span>
+            <span id="I-plus">+</span>
+         </div>
+         <input type="button" class="submit-btn" value="Add to order" id="add" >
+         <div class="input">
+            <span>Current order</span>
+            <input type="text" class="select" id="current" >
+         </div>
+         <div class="input">
+            <span>Overall order cost</span>
+            <input type="text" class="select" id="totalcurrent" >
+         </div>
+         </form>
+         </div>
+         <footer>
+            <nav id="footer">
+              <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy and Terms</a></li>
+                <li><a href="#">User Agreement</a></li>
+              </ul>
+              <p>© 2022 Ceylon Tea</p>
+            </nav>
+            <script src="scripts.js"></script>
+         </footer>
+        
+     </body>
+</html>
